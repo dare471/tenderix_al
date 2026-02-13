@@ -1,0 +1,54 @@
+<?php
+
+$MESS["PW_TD_GLOBAL_MENU_TEXT"] = "Тендеры";
+$MESS["PW_TD_GLOBAL_MENU_TITLE"] = "Тендеры";
+$MESS ['PW_TD_COMPANY'] = "Предприятия";
+$MESS ['PW_TD_COMPANY_ALT'] = "Управление предприятиями";
+$MESS ['PW_TD_SECTION'] = "Разделы";
+$MESS ['PW_TD_SECTION_ALT'] = "Управление разделами";
+$MESS ['PW_TD_SPR'] = "Справочники";
+$MESS ['PW_TD_SPR_ALT'] = "Управление справочниками";
+$MESS ['PW_TD_LIST_POSTAV'] = "Список участников";
+$MESS ['PW_TD_USER'] = "Пользователи";
+$MESS ['PW_TD_USER_ALT'] = "Управление пользователи";
+$MESS ['PW_TD_USER_SUPPLIER'] = "Участники";
+$MESS ['PW_TD_USER_SUPPLIER_ALT'] = "Управление участниками лотов";
+$MESS ['PW_TD_USER_SUPPLIER_SPR'] = "Статусы";
+$MESS ['PW_TD_USER_SUPPLIER_SPR_ALT'] = "Управление статусами участников";
+$MESS ['PW_TD_USER_SUPPLIER_EX'] = "Доп. свойства";
+$MESS ['PW_TD_USER_SUPPLIER_EX_ALT'] = "Дополнительные поля для карточки участника";
+$MESS ['PW_TD_USER_BUYER'] = "Организаторы";
+$MESS ['PW_TD_USER_BUYER_ALT'] = "Управление организаторами лотов";
+$MESS ['PW_TD_PRODUCTS'] = "Товары";
+$MESS ['PW_TD_PRODUCTS_ALT'] = "Управление товарами";
+$MESS ['PW_TD_LOT'] = "Лоты";
+$MESS ['PW_TD_LOT_ALT'] = "Список лотов";
+$MESS ['PW_TD_LOT_LIST'] = "Список лотов";
+$MESS ['PW_TD_LOT_LIST_ALT'] = "Список лотов";
+$MESS ['PW_TD_PROPOSAL_PROPERTY'] = "Доп. свойства";
+$MESS ['PW_TD_PROPOSAL_PROPERTY_ALT'] = "Дополнительные свойства, которые будет заполнять участник";
+$MESS ['PW_TD_LOG'] = "Журнал";
+$MESS ['PW_TD_LOG_ALT'] = "Журнал действий пользователей";
+$MESS ['PW_TD_TOOLS'] = "Инструменты";
+$MESS ['PW_TD_TOOLS_ALT'] = "Инструменты";
+$MESS ['PW_TD_TOOLS_EXPORT'] = "Экспорт";
+$MESS ['PW_TD_TOOLS_EXPORT_ALT'] = "Экспорт данных в формате CSV";
+$MESS ['PW_TD_TOOLS_EXPORT_CSV'] = "CSV";
+$MESS ['PW_TD_TOOLS_EXPORT_XML'] = "XML";
+$MESS ['PW_TD_TOOLS_EXPORT_XML_ALT'] = "Экспорт данных в формате XML";
+$MESS ['PW_TD_TOOLS_IMPORT'] = "Импорт";
+$MESS ['PW_TD_TOOLS_IMPORT_ALT'] = "Импорт данных в формате CSV";
+$MESS ['PW_TD_TOOLS_IMPORT_CSV'] = "CSV";
+$MESS ['PW_TD_TOOLS_IMPORT_XML'] = "XML";
+$MESS ['PW_TD_TOOLS_IMPORT_XML_ALT'] = "Импорт данных в формате XML";
+
+$MESS ['PW_TD_DESC_PAGER_SETTINGS'] = "Настройки постраничной навигации";
+$MESS ['PW_TD_DESC_TOP_PAGER'] = "Выводить над списком";
+$MESS ['PW_TD_DESC_BOTTOM_PAGER'] = "Выводить под списком";
+$MESS ['PW_TD_DESC_PAGER_TITLE'] = "Название категорий";
+$MESS ['PW_TD_DESC_PAGER_SHOW_ALWAYS'] = "Выводить всегда";
+$MESS ['PW_TD_DESC_PAGER_TEMPLATE'] = "Название шаблона";
+$MESS ['PW_TD_DESC_PAGER_DESC_NUMBERING'] = "Использовать обратную навигацию";
+$MESS ['PW_TD_DESC_PAGER_DESC_NUMBERING_CACHE_TIME'] = "Время кеширования страниц для обратной навигации";
+$MESS ['PW_TD_DESC_SHOW_ALL'] = "Показывать ссылку \"Все\"";
+?>

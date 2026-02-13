@@ -1,0 +1,18 @@
+# Bitrix backups
+/bitrix/backup/
+
+# Uploads
+/upload/
+
+# Logs
+/bitrix/logs/
+/bitrix/php_interface/error.log
+*.log
+
+# Cache (рекомендую тоже)
+/bitrix/cache/
+/bitrix/managed_cache/
+/bitrix/tmp/
+
+# Mac
+.DS_Store

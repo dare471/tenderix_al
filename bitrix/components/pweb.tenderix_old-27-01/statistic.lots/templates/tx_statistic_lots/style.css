@@ -1,0 +1,53 @@
+.t_lot_table {
+    border-collapse: collapse;
+    margin: 10px 0;
+    font-size: 11px;
+    font-family: Verdana;
+    width: 100%;
+}
+.t_lot_table.bold * {
+    font-weight: bold;
+}
+.t_lot_table td.price {
+    white-space: nowrap;
+}
+.t_lot_table th {
+    border: 1px solid #d9d9d9;
+    padding: 3px 10px;
+    background-image: linear-gradient(bottom, rgb(219,219,219) 23%, rgb(233,233,233) 42%);
+    background-image: -o-linear-gradient(bottom, rgb(219,219,219) 23%, rgb(233,233,233) 42%);
+    background-image: -moz-linear-gradient(bottom, rgb(219,219,219) 23%, rgb(233,233,233) 42%);
+    background-image: -webkit-linear-gradient(bottom, rgb(219,219,219) 23%, rgb(233,233,233) 42%);
+    background-image: -ms-linear-gradient(bottom, rgb(219,219,219) 23%, rgb(233,233,233) 42%);
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.23, rgb(219,219,219)),
+        color-stop(0.42, rgb(233,233,233))
+        );
+}
+.t_lot_table td {
+    border: 1px solid #d9d9d9;
+    padding: 10px 10px;
+}
+
+.lvl_1 {
+    cursor: pointer;
+}
+.lvl_2 {
+    background-color: #f2f2f2;
+}
+.lvl_3 {
+    background-color: #C2C2C2;
+}
+.lvl_4 {
+    background-color: #A2A2A2;
+}
+
+.percent-effective {
+    color: #00A;
+}
+.statistic th {
+    font-size: 80%;
+}

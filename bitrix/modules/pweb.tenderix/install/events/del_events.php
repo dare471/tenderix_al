@@ -1,0 +1,19 @@
+<?
+$DB->Query("DELETE FROM b_event_type WHERE EVENT_NAME in ('TENDERIX_NEW_LOT')");
+$DB->Query("DELETE FROM b_event_message WHERE EVENT_NAME in ('TENDERIX_NEW_LOT')");
+
+$DB->Query("DELETE FROM b_event_type WHERE EVENT_NAME in ('TENDERIX_NEW_PROPOSAL')");
+$DB->Query("DELETE FROM b_event_message WHERE EVENT_NAME in ('TENDERIX_NEW_PROPOSAL')");
+
+$DB->Query("DELETE FROM b_event_type WHERE EVENT_NAME in ('TENDERIX_WIN_LOT')");
+$DB->Query("DELETE FROM b_event_message WHERE EVENT_NAME in ('TENDERIX_WIN_LOT')");
+
+$DB->Query("DELETE FROM b_event_type WHERE EVENT_NAME in ('TENDERIX_BEST_PROPOSAL')");
+$DB->Query("DELETE FROM b_event_message WHERE EVENT_NAME in ('TENDERIX_BEST_PROPOSAL')");
+
+$DB->Query("DELETE FROM b_event_type WHERE EVENT_NAME in ('TENDERIX_NEW_PARTY')");
+$DB->Query("DELETE FROM b_event_message WHERE EVENT_NAME in ('TENDERIX_NEW_PARTY')");
+
+$DB->Query("DELETE FROM b_event_type WHERE EVENT_NAME in ('TENDERIX_STATUS_UPDATE')");
+$DB->Query("DELETE FROM b_event_message WHERE EVENT_NAME in ('TENDERIX_STATUS_UPDATE')");
+?>

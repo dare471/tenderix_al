@@ -1,0 +1,39 @@
+<?
+define("NEED_AUTH", true);
+require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetTitle("Статистика");?>
+<div class="page">
+	<div class="container-fluid">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h2 class="page-heading">Статистика</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					 <? $APPLICATION->IncludeComponent("pweb.tenderix:statistic", "tx_statistic", array(
+						"JQUERY" => "Y",
+						"CACHE_TYPE" => "A",
+						"CACHE_TIME" => "86400",
+						"SET_TITLE" => "Y",
+						"UNIT" => "r",
+						"FORMAT" => "0",
+						"LEVEL_COL" => "4",
+						"TYPE_L1" => "COMPANY_ID",
+						"TYPE_L2" => "SECTION_ID",
+						"TYPE_L3" => "DATE_YEAR",
+						"TYPE_L4" => "DATE_MONTH"
+						),
+						false
+					); ?>
+					</br>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<? 
+require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

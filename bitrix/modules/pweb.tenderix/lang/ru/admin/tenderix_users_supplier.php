@@ -1,0 +1,37 @@
+<?php
+$MESS ['DELETE_ERROR'] = "Ошибка удаления";
+$MESS ['SAVE_ERROR'] = "Ошибка сохранения";
+$MESS ['PW_TD_SAVE_ERROR'] = "Ошибка записи в базу данных";
+$MESS ['PW_TD_PAGES'] = "Участники";
+$MESS ['PW_TD_TIMESTAMP'] = "Дата изм.";
+$MESS ['PW_TD_ACTIVE'] = "Акт.";
+$MESS ['PW_TD_C_SORT'] = "Сорт.";
+$MESS ['PW_TD_CONFIRM_DEL_SUPPLIER'] = "Вы уверены что хотите удалить участника лота со всеми привязками?";
+$MESS ['PW_TD_CONFIRM_MAIL_SUPPLIER'] = "Отправить приглашение?";
+$MESS ['PW_TD_DELETE'] = "удалить";
+$MESS ['PW_TD_ACTIVATE'] = "активировать";
+$MESS ['PW_TD_DEACTIVATE'] = "деактивировать";
+$MESS ['PW_TD_MAIL'] = "отправить приглашение";
+$MESS ['PW_MENU_MAIL'] = "Отправить приглашение";
+$MESS ['PW_TD_CREATE'] = "Добавить нового участника";
+$MESS ['PW_TD_ADD_TITLE'] = "Нажмите для добавления нового участника лота";
+$MESS ['PW_TD_PAGE_TITLE'] = "Участники лота";
+$MESS ['PW_TD_YES'] = "да";
+$MESS ['PW_TD_NO'] = "нет";
+$MESS ['PW_TD_ALL'] = "(все)";
+$MESS ['PW_TD_ELEMENTS'] = "Участников";
+$MESS ['PW_TD_EDIT_SPR_VIEW'] = "Просмотр участников";
+$MESS ['PW_TD_SUPPLIER_NAME'] = "ФИО участника";
+$MESS ['PW_TD_SUPPLIER_EMAIL'] = "Email";
+$MESS ['PW_TD_SUPPLIER_LOGIN'] = "Логин";
+$MESS ['PW_TD_SUPPLIER_NAME_COMPANY'] = "Компания";
+$MESS ['PW_TD_SUPPLIER_ACTIVE'] = "Акт.";
+$MESS ['PW_TD_SUPPLIER_STATUS'] = "Статус";
+$MESS ['PW_TD_SUPPLIER_DATE_REGISTER'] = "Дата регистрации";
+$MESS ['PW_TD_EDIT_NAME'] = "Редактирование участника";
+$MESS ['PW_TD_F_NAME'] = "ФИО:";
+$MESS ['PW_TD_F_ACTIVE'] = "Активно:";
+$MESS ['PW_TD_F_NAME_COMPANY'] = "Компания:";
+$MESS ['PW_TD_F_LOGIN'] = "Логин:";
+$MESS ['PW_TD_F_STATUS'] = "Статус:";
+?>

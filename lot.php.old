@@ -1,0 +1,18 @@
+<?
+define("NEED_AUTH", true);
+require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetTitle("Создание торгов");
+?>
+<div class="row">
+	<?$APPLICATION->IncludeComponent(
+	"pweb.tenderix:lot.add", 
+	"tx_lot_add_plus", 
+	array(
+		"JQUERY" => "Y",
+		"VISUAL_EDITOR" => "Y",
+		"COMPANY_ONLY" => "N"
+	),
+	false
+);?>	
+</div>
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

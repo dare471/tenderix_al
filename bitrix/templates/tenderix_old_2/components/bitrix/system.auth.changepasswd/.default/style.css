@@ -1,0 +1,114 @@
+
+.bg-login {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	background: url('images/image03.jpg') no-repeat;
+	width: 50%;
+	background-position: 0;
+	background-size: cover;
+}
+.bg-login-heading {
+	color: #fff;
+}
+.bg-login-overlay {
+	width: 50%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.4);
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	padding-bottom: 60px;
+}
+
+.form-login {
+	width: 50%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	#align-items: center;
+	text-align: center;
+	#justify-content: left;
+	padding-top: 60px;
+	padding-left: 120px;
+}
+.form-login-logo {
+	width: 200px;
+	height: 50px;
+	background: url('images/logo-red.png') no-repeat;
+	background-position: 0;
+	background-size: contain;
+	display: inline-block;
+}
+.form-login-form {
+}
+.form-login-table  {
+	width: 360px;
+}
+.form-login-table td {
+	text-align: center;	
+}
+.form-login-table td.checkbox {
+	text-align: left;	
+}
+
+.form-login-table td.checkbox label {
+	display: inline !important;
+	font-size: 14px;
+}
+
+.form-login-form input[type="submit"] {
+	width: 100%;
+	background: #57A14B;
+	border: none;
+	color: #fff;
+}
+
+.form-login-form input, 
+.form-login-form input:active, 
+.form-login-form input:focus, 
+.form-login-form input:active:focus {
+	outline:none !important;
+	box-shadow: none !important;
+	
+}
+
+.form-login-form input[type="submit"]:hover,
+.form-login-form input[type="submit"]:focus,
+.form-login-form input[type="submit"]:active
+{
+	background: #60AF52;
+}
+
+.small-link {}
+
+.errortext,
+.notetext {
+	width: 100%;
+	position: relative;
+	padding: .75rem 1.25rem;
+	margin-bottom: 1rem;
+	display: inline-block;
+	margin: 0;
+	text-align: left;
+	font-size: 14px;
+	border-radius: .25rem;
+}
+.errortext {
+	background-color: #f8d7da;
+	border-color: #f5c6cb;
+	color: #721c24;
+}
+.notetext {
+	color: #155724;
+	background-color: #d4edda;
+	border-color: #c3e6cb;
+}
+

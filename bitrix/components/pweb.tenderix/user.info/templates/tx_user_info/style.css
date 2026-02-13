@@ -1,0 +1,14 @@
+.user_info .media-body {
+    padding-top:20px;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.label-default {
+    font-weight: normal;
+    font-size: 100%;
+}
+
+.proposal_span {
+    margin-top: 5px;
+}

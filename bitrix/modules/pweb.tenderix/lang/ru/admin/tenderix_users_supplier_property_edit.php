@@ -1,0 +1,41 @@
+<?
+$MESS["PW_TD_ERROR_UPDATE"] = "Ошибка изменения параметров свойства";
+$MESS["PW_TD_ERROR_TITLE_EMPTY"] = "Поле с названием свойства не должно быть пустым";
+$MESS["PW_TD_ERROR_ADD"] = "Ошибка добавления нового свойства";
+$MESS["PW_TD_TITLE_UPDATE"] = "Изменение свойства ##ID#";
+$MESS["PW_TD_TITLE_ADD"] = "Добавление нового свойства";
+$MESS["PW_TD_NAME"] = "Название";
+$MESS["PW_TD_2FLIST"] = "Список свойств";
+$MESS["PW_TD_NEW_ENT"] = "Добавить новое свойство";
+$MESS["PW_TD_DELETE_ENT"] = "Удалить свойство";
+$MESS["PW_TD_DELETE_ENT_CONFIRM"] = "Вы уверены, что хотите удалить текущее свойство и связки с пользователями?";
+$MESS["PW_TD_TAB_ENT"] = "Свойство";
+$MESS["PW_TD_TAB_ENT_DESCR"] = "Свойство";
+$MESS["PW_TD_SORT"] = "Сортировка";
+$MESS["PW_TD_ACTIVE"] = "Активно";
+$MESS["PW_TD_TITLE"] = "Название";
+$MESS["PW_TD_CODE"] = "Код";
+$MESS["PW_TD_PROPERTY_TYPE"] = "Тип";
+$MESS["PW_TD_IS_REQUIRED"] = "Обязательное";
+$MESS["PW_TD_MULTI"] = "Множественное";
+$MESS["PW_TD_MULTI_CNT"] = "Количество полей для ввода новых множественных значений";
+$MESS["PW_TD_ROW_COL_COUNT"] = "Размер поля для ввода значения (Строк х Столбцов)";
+$MESS["PW_TD_COL_COUNT"] = "Размер поля для ввода значения (Столбцов)";
+$MESS["PW_TD_ROW_LIST_COUNT"] = "Количество строк списка";
+$MESS["PW_TD_FILE_TYPE"] = "Типы файлов";
+$MESS["PW_TD_PROPERTY_S"] = "Строка";
+$MESS["PW_TD_PROPERTY_N"] = "Число";
+$MESS["PW_TD_PROPERTY_F"] = "Файл";
+$MESS["PW_TD_PROPERTY_L"] = "Список";
+$MESS["PW_TD_PROPERTY_T"] = "Текст";
+$MESS["PW_TD_PROPERTY_D"] = "Дата и время";
+$MESS["PW_TD_DEFAULT_VALUE"] = "Значение по умолчанию";
+$MESS["PW_TD_DEFAULT_VALUE_LIST"] = "Значения списка";
+$MESS["PW_TD_LIST_ELEMENT_ADD"] = "Еще...";
+$MESS["PW_TD_FILE_ALL"] = "(любые)";
+$MESS["PW_TD_FILE_IMG"] = "Изображения";
+$MESS["PW_TD_FILE_DOC"] = "Документы";
+$MESS["PW_TD_FILE_SOUND"] = "Звуки";
+$MESS["PW_TD_FILE_VIDEO"] = "Видео";
+
+?>

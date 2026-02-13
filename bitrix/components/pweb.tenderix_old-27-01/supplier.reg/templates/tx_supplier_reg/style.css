@@ -1,0 +1,194 @@
+/*table.reg-table {
+    border-style: none solid solid;
+    width: 100%;
+}
+table.reg-table td.reg-field {
+    text-align: right;
+}*/
+
+.t_lot {
+    margin: 5px 0;  
+    padding: 5px 0;
+    border-top: 1px solid #d9d9d9;
+    float: left;
+}
+.t_lot form {
+}
+.t_lot form textarea {
+    width: 100%;
+    padding: 0;
+    resize: none;
+    border: 1px solid #abadb3;
+    background-image: linear-gradient(bottom, rgb(230,230,232) 30%, rgb(255,255,255) 70%);
+    background-image: -o-linear-gradient(bottom, rgb(230,230,232) 30%, rgb(255,255,255) 70%);
+    background-image: -moz-linear-gradient(bottom, rgb(230,230,232) 30%, rgb(255,255,255) 70%);
+    background-image: -webkit-linear-gradient(bottom, rgb(230,230,232) 30%, rgb(255,255,255) 70%);
+    background-image: -ms-linear-gradient(bottom, rgb(230,230,232) 30%, rgb(255,255,255) 70%);
+
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.3, rgb(230,230,232)),
+        color-stop(0.7, rgb(255,255,255))
+        );
+}
+.t_lot_table {
+    border-collapse: collapse;
+    margin: 10px 0;
+    font-size: 12px;
+    font-family: Verdana;
+    width: 100%;
+}
+.t_lot_table.bold * {
+    font-weight: bold;
+}
+.t_lot_table th {
+    border: 1px solid #d9d9d9;
+    padding: 3px 10px;
+    white-space: nowrap;
+    background-image: linear-gradient(bottom, rgb(219,219,219) 23%, rgb(233,233,233) 42%);
+    background-image: -o-linear-gradient(bottom, rgb(219,219,219) 23%, rgb(233,233,233) 42%);
+    background-image: -moz-linear-gradient(bottom, rgb(219,219,219) 23%, rgb(233,233,233) 42%);
+    background-image: -webkit-linear-gradient(bottom, rgb(219,219,219) 23%, rgb(233,233,233) 42%);
+    background-image: -ms-linear-gradient(bottom, rgb(219,219,219) 23%, rgb(233,233,233) 42%);
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.23, rgb(219,219,219)),
+        color-stop(0.42, rgb(233,233,233))
+        );
+}
+.t_lot_table td {
+    border: 1px solid #d9d9d9;
+    padding: 3px 10px;
+}
+.t_lot_table tr {
+    border-top: 1px solid #fff;
+}
+.t_lot_table tr.odd {
+    background: #f2f2f2;
+}
+.t_lot_table input {
+    border: 1px solid #abadb3;
+    padding: 1px 5px;
+    background-image: linear-gradient(bottom, rgb(243,242,242) 9%, rgb(255,255,255) 78%);
+    background-image: -o-linear-gradient(bottom, rgb(243,242,242) 9%, rgb(255,255,255) 78%);
+    background-image: -moz-linear-gradient(bottom, rgb(243,242,242) 9%, rgb(255,255,255) 78%);
+    background-image: -webkit-linear-gradient(bottom, rgb(243,242,242) 9%, rgb(255,255,255) 78%);
+    background-image: -ms-linear-gradient(bottom, rgb(243,242,242) 9%, rgb(255,255,255) 78%);
+
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.09, rgb(243,242,242)),
+        color-stop(0.78, rgb(255,255,255))
+        );
+}
+input.w80 {
+    width: 80px;
+}
+input.w300 {
+    width: 300px;
+}
+
+.t_lot_meta p {
+    margin: 0 0 7px;
+}
+
+
+
+
+
+.t_active {
+    padding: 0 0 0 20px;
+    line-height: 12px;
+    min-height: 15px;
+    display: inline-block;
+    background: transparent url(images/active.gif) 0 50% no-repeat scroll;
+}
+.t_legend.t_active {
+    padding-right: 20px;
+}
+.t_arhive{
+    padding: 0 0 0 20px;
+    line-height: 12px;
+    min-height: 15px;
+    display: inline-block;
+    background: transparent url(images/arhive.gif) 0 50% no-repeat scroll;
+}
+a.t_arhive{
+    color: #f1896c !important;
+}
+.t_open{
+    padding: 0 0 0 20px;
+    line-height: 12px;
+    min-height: 15px;
+    display: inline-block;
+    background: transparent url(images/open.gif) 0 50% no-repeat scroll;
+}
+.t_block_top .t_block_top_left {
+    float: left;
+}
+
+.t_block_left {
+    float: left;
+    width: 205px;
+}
+.t_block_right {
+    float: right;
+    width: 695px;
+}
+
+.errors-tender {
+    color: red;
+    display: block;
+    border: 1px solid red;
+    padding: 10px;
+    margin: 10px 0 10px 0;
+}
+
+.send-ok-tender {
+    color: #7EB060;
+    display: block;
+    border: 1px solid #7EB060;
+    padding: 10px;
+    margin: 10px 0 10px 0;
+}
+
+.input-checked input {
+    width: 10px !important;
+}
+.prop-elem div {
+    padding: 2px 0 2px;
+}
+.form-group {
+	margin-bottom:0px!important;
+}
+.form-date {
+	position: relative;	
+}
+.form-date img.calendar-icon {
+    border:0px;
+    width:19px;
+    height:19px;
+    vertical-align:top;
+    margin:1px;
+    margin-left:2px;
+    cursor: pointer;
+    position: absolute;
+    top: 7px;
+    right: 9px;
+}
+.form-date img.calendar-icon-hover {
+    border:1px solid #AEB6C2; 
+    background-color:#DBE3F2; 
+    margin:0px; 
+    margin-left:1px
+}
+.file_upload input.typefile{
+	border:0px;
+	margin-top:10px;
+}

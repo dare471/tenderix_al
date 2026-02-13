@@ -1,0 +1,23 @@
+.unsubscribe {
+	width: 100%;
+	background: #f4f4f4;
+	padding: 14px 20px;
+}
+
+.unsubscribe > a {
+	display: inline-block;
+	padding: 8px 12px;
+	#border-radius: 4px;
+	background: #ff8000;
+	color: #fff !important;
+	text-decoration: none;
+	margin: 8px 6px;
+}
+
+.unsubscribe > a:hover, 
+.unsubscribe > a:focus {
+	text-decoration: none;
+}
+.unsubscribe > a:hover {
+	background: #F77300;
+}

@@ -1,0 +1,41 @@
+<?
+$MESS["PW_TD_LOT_NUM"] = "Лот №";
+$MESS["PW_TD_SECTION"] = "Раздел";
+$MESS["PW_TD_DATE_START"] = "Дата начала";
+$MESS["PW_TD_DATE_END"] = "Дата окончания";
+$MESS["PW_TD_DATE_DELIVERY"] = "Срок поставки";
+$MESS["PW_TD_LOT_OPEN_PRICE"] = "Лот с открытой ценой";
+$MESS["PW_TD_TERM_PAYMENT"] = "Условия оплаты";
+$MESS["PW_TD_TERM_DELIVERY"] = "Условия поставки";
+$MESS["PW_TD_COMPANY"] = "Предприятие-инициатор";
+$MESS["PW_TD_RESPONSIBLE"] = "Ответственный за лот";
+$MESS["PW_TD_RESPONSIBLE_PHONE"] = "Телефон";
+$MESS["PW_TD_NOTE"] = "Примечание";
+$MESS["PW_TD_PRODUCT_COUNT"] = "Количество";
+$MESS["PW_TD_PRODUCT_UNIT"] = "Единицы измерения";
+$MESS["PW_TD_PRODUCT_START_PRICE"] = "Начальная цена";
+$MESS['PW_TD_PRICE_START_PRICE_NDS'] = "Начальная цена с НДС";
+$MESS['PW_TD_PRICE_START_PRICE_NDS_N'] = "Начальная цена без НДС";
+$MESS["PW_TD_PRODUCT_STEP_PRICE"] = "Шаг снижения";
+$MESS["PW_TD_SPEC_NAME_PROD"] = "Наименование товара";
+$MESS["PW_TD_SPEC_ADD_INFO"] = "Доп.хар-ки";
+$MESS["PW_TD_SPEC_UNIT"] = "Ед.изм.";
+$MESS["PW_TD_SPEC_COUNT"] = "Кол-во";
+$MESS["PW_TD_SPEC_START_PRICE"] = "Начальная цена";
+$MESS["PW_TD_SPEC_START_PRICE_NDS"] = "Начальная цена с НДС";
+$MESS["PW_TD_SPEC_START_PRICE_NDS_N"] = "Начальная цена без НДС";
+$MESS["PW_TD_SPEC_STEP_PRICE"] = "Шаг снижения";
+$MESS["PW_TD_ADD_PROPOSAL"] = "Подача предложения";
+$MESS["PW_TD_DOCUMENT"] = "Документы";
+$MESS["PW_TD_NUM"] = "№";
+$MESS["PW_TD_TOVAR"] = "Спецификация СЭТ";
+$MESS["PW_TD_PROPOSAL_ADD"] = "Подать предложение";
+$MESS["PW_TD_EDIT_LOT"] = "Редактирование лота";
+$MESS["PW_TD_COPY_LOT"] = "Дублировать";
+$MESS["PW_TD_EVENT_SEND"] = "Отправить приглашение";
+$MESS["PW_TD_ADD_TIME"] = "Продлить тендер";
+$MESS["PW_TD_ADD_TIME_SEC"] = "Время (сек.)";
+$MESS["PW_TD_CURRENCY"] = "Валюта";
+$MESS["PW_TD_HISTORY"] = "История переторжки"; //09.10.2017
+
+?>

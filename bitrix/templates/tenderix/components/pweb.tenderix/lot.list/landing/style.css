@@ -1,0 +1,68 @@
+.lot-item-wrapper {
+	border: 1px solid #AC0E0E;
+	border-left-width: 6px;
+	margin-bottom: 1.25rem;
+	padding: 6px;
+	height: 200px;
+	display: table;
+	background: #fff;
+}
+
+.lot-item {
+	display: table-cell;
+	#vertical-align: middle;
+}
+
+.table-prop {
+	table-layout: fixed;
+	width: 100%;
+}
+
+.table-prop td {
+	padding: 6px 0;
+}
+
+.table-prop td {
+	vertical-align: top;
+}
+
+.table-prop td.nowrap {
+  white-space : nowrap;
+  overflow : hidden;
+  text-overflow: ellipsis;
+}
+
+.table-prop td.currency {
+	font-weight: bold;
+	font-size: 1.1rem;
+	text-align: right;
+	padding-right: 1rem;
+}
+
+.table-prop td.star {
+	text-align: right;
+	padding-right: 1rem;
+	color: #ffd43b;
+	font-size: 1rem;
+}
+
+.table-prop td.number {
+	font-size: 1rem;
+}
+
+.table-prop .title {
+	font-size: 1.25rem;
+	height: 64px;
+	overflow: hidden;
+	
+}
+
+.table-prop .title>a {
+	border-bottom: 1px solid rgba(55,113,157,0.2);
+	color: #37719D;
+}
+
+.table-prop td.delivery {
+	font-size: 1rem;
+	color: #7C7C7C;
+}

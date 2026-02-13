@@ -1,0 +1,76 @@
+.fa {
+	margin:4px 0 0 3px;
+}
+.t_lot_table th,
+.t_lot_table td
+{
+	font-size: 14px !important;
+}
+.t_lot_table th a {
+	color: #fff;
+}
+.t_lot_table th a.navy {
+	color: #7b9aa9;
+}
+.t_lot_title,
+.t_lot_id {
+	font-weight: bold;
+	color: #37719D;
+	
+}
+.t_lot_title {
+	font-size: 1rem;
+}
+.t_lot_status {
+	font-size: 1rem;
+}
+.t_lot_status_active,
+.t_lot_status_private {
+	color: #5aab00;
+}
+.t_lot_status_end {
+	color: #7C7C7C;
+}
+.t_lot_status_archive,
+.t_lot_status_saved
+{
+	color: #aaacb2;
+}
+
+.proposal_request {
+	padding: 6px 8px;
+	font-size: 14px;
+}
+.t_lot_time_left {
+	color: #37719D;
+	font-weight: 600;
+	display: block;
+}
+
+.t_lot_table_th_navy {
+	background: #7b9aa9; 
+	border-top: 2px solid #7b9aa9 !important;
+	border-bottom: 2px solid #7b9aa9 !important;
+	border-left: 1px solid #fff;
+	color: #fff;
+}
+.t_lot_table_th_gray {
+	background: #e2e2e26e;
+	border: 1px solid #fff;
+}
+th.t_lot_table_th_gray {
+	border-bottom: 1px solid #dee2e6 !important;
+}
+
+.t_label {
+	font-size: .75rem;
+	font-weight: bold;
+}
+.t_lot_status_message a {
+	color: #cf1427 !important;
+	#font-size: 0.85rem;
+	
+}
+
+
+.

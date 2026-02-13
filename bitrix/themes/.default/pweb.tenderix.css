@@ -1,0 +1,21 @@
+/*Menu icon*/
+.tenderix_index_icon {background:url(icons/pweb.tenderix/middle_tenderix.png) no-repeat center;}
+
+.tenderix_menu_icon {background:url(icons/pweb.tenderix/mini_tenderix.gif) no-repeat center;}
+.tenderix_menu_icon_lot {background:url(icons/pweb.tenderix/mini_tenderix_lot.gif) no-repeat center;}
+.tenderix_menu_icon_lot {background:url(icons/pweb.tenderix/mini_tenderix_lot.gif) 9px 4px no-repeat !important;}
+.tenderix_menu_icon_company {background:url(icons/pweb.tenderix/mini_tenderix_company.gif) no-repeat center;}
+.tenderix_menu_icon_dictionaries {background:url(icons/pweb.tenderix/mini_tenderix_dictionaries.gif) no-repeat center;}
+.tenderix_menu_icon_products {background:url(icons/pweb.tenderix/mini_tenderix_products.gif) no-repeat center;}
+.tenderix_menu_icon_sections {background:url(icons/pweb.tenderix/mini_tenderix_sections.gif) no-repeat center;}
+.tenderix_menu_icon_users {background:url(icons/pweb.tenderix/mini_tenderix_users.gif) no-repeat center;}
+.tenderix_menu_icon_log {background:url(icons/pweb.tenderix/mini_tenderix_log.gif) no-repeat center;}
+
+.tenderix_page_icon {background:url(icons/pweb.tenderix/big_tenderix.gif) no-repeat center;}
+.tenderix_page_icon_lot {background:url(icons/pweb.tenderix/big_tenderix_lot.gif) no-repeat center;}
+.tenderix_page_icon_company {background:url(icons/pweb.tenderix/big_tenderix_company.gif) no-repeat center;}
+.tenderix_page_icon_dictionaries {background:url(icons/pweb.tenderix/big_tenderix_dictionaries.gif) no-repeat center;}
+.tenderix_page_icon_products {background:url(icons/pweb.tenderix/big_tenderix_products.gif) no-repeat center;}
+.tenderix_page_icon_sections {background:url(icons/pweb.tenderix/big_tenderix_sections.gif) no-repeat center;}
+.tenderix_page_icon_users {background:url(icons/pweb.tenderix/big_tenderix_users.gif) no-repeat center;}
+.tenderix_page_icon_log {background:url(icons/pweb.tenderix/big_tenderix_log.gif) no-repeat center;}

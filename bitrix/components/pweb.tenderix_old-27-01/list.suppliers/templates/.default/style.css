@@ -1,0 +1,29 @@
+.space-bottom {
+	margin-bottom: 40px;
+	width: 100%;
+}
+
+.supplier_status_filter  {
+	background: #EEEFF0;
+	border-top: 1px solid #dee2e6;
+	border-bottom: 1px solid #dee2e6;
+	width: 100%;
+}
+
+.supplier_status_filter .btn_status.active {
+	background: #7b9aa9;
+	color: #fff;
+}
+
+.supplier_status_filter .btn_status:hover,
+.supplier_status_filter .btn_status:focus,
+.supplier_status_filter .btn_status:active {
+	box-shadow: none;
+	outline: none;
+}
+.supplier_status_filter .btn_status:not(.active):hover {
+	background: #DBDBDB;
+}
+.t_supplier_table td {
+	font-size: 14px !important;
+}

@@ -1,0 +1,54 @@
+#tendtix {
+	font-size: 12px;
+	font-family: Verdana;
+	width: 924px;
+	margin: 0 auto;
+}
+#tendtix a {
+    color: #7eb060;
+    text-decoration: underline;
+}
+#tendtix a img {
+    border: 0;
+}
+#tendtix .nowrap {
+    white-space: nowrap;
+}
+#tendtix h1, #tendtix h2 {
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0 0 10px;
+    float: left;
+    width: 100%;
+}
+#tendtix  .t_block_top {
+    float: left;
+    width: 100%;
+    margin: 30px 0 0;
+    min-height: 20px;
+}
+    #tendtix  .t_block_top .t_block_top_left {
+        float: left;
+    }
+    #tendtix  .t_block_top .t_block_top_right {
+        float: right;
+    }
+        #tendtix  .t_block_top .t_legend {
+            color: #8c8c8c;
+            font-size: 11px;
+        }
+        
+            .t_legend.t_active {
+                padding-right: 20px;
+            }
+        
+            a.t_arhive{
+                color: #f1896c !important;
+            }
+        
+#tendtix .t_center {
+    text-align: center;
+}
+#tendtix .t_right {
+    text-align: right;
+}

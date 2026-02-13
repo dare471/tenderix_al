@@ -1,0 +1,58 @@
+.t_lot_table {
+    border-collapse: collapse;
+    margin: 10px 0;
+    font-size: 12px;
+    font-family: Verdana;
+}
+    .t_lot_table.bold * {
+        font-weight: bold;
+    }
+    .t_lot_table th {
+        border: 1px solid #d9d9d9;
+        padding: 3px 10px;
+        white-space: nowrap;
+        background-image: linear-gradient(bottom, rgb(219,219,219) 23%, rgb(233,233,233) 42%);
+        background-image: -o-linear-gradient(bottom, rgb(219,219,219) 23%, rgb(233,233,233) 42%);
+        background-image: -moz-linear-gradient(bottom, rgb(219,219,219) 23%, rgb(233,233,233) 42%);
+        background-image: -webkit-linear-gradient(bottom, rgb(219,219,219) 23%, rgb(233,233,233) 42%);
+        background-image: -ms-linear-gradient(bottom, rgb(219,219,219) 23%, rgb(233,233,233) 42%);
+        background-image: -webkit-gradient(
+                linear,
+                left bottom,
+                left top,
+                color-stop(0.23, rgb(219,219,219)),
+                color-stop(0.42, rgb(233,233,233))
+        );
+    }
+    .t_lot_table td {
+        border: 1px solid #d9d9d9;
+        padding: 3px 10px;
+    }
+    .t_lot_table tr {
+        border-top: 1px solid #fff;
+    }
+        .t_lot_table tr.odd {
+            background: #f2f2f2;
+        }
+    .t_lot_table input {
+        border: 1px solid #abadb3;
+        width: 95px;
+        padding: 1px 5px;
+        background-image: linear-gradient(bottom, rgb(243,242,242) 9%, rgb(255,255,255) 78%);
+        background-image: -o-linear-gradient(bottom, rgb(243,242,242) 9%, rgb(255,255,255) 78%);
+        background-image: -moz-linear-gradient(bottom, rgb(243,242,242) 9%, rgb(255,255,255) 78%);
+        background-image: -webkit-linear-gradient(bottom, rgb(243,242,242) 9%, rgb(255,255,255) 78%);
+        background-image: -ms-linear-gradient(bottom, rgb(243,242,242) 9%, rgb(255,255,255) 78%);
+
+        background-image: -webkit-gradient(
+                linear,
+                left bottom,
+                left top,
+                color-stop(0.09, rgb(243,242,242)),
+                color-stop(0.78, rgb(255,255,255))
+        );
+    }
+.t_prov {
+    float: left;
+    width: 100%;
+}

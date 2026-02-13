@@ -1,0 +1,35 @@
+<?php
+$MESS ['DELETE_ERROR'] = "Ошибка удаления";
+$MESS ['SAVE_ERROR'] = "Ошибка сохранения";
+$MESS ['PW_TD_SAVE_ERROR'] = "Ошибка записи в базу данных";
+$MESS ['PW_TD_PAGES'] = "Лоты";
+$MESS ['PW_TD_TIMESTAMP'] = "Дата изм.";
+$MESS ['PW_TD_ACTIVE'] = "Акт.";
+$MESS ['PW_TD_C_SORT'] = "Сорт.";
+$MESS ['PW_TD_TITLE'] = "Наименование лота";
+$MESS ['PW_TD_SECTION_TITLE'] = "Раздел";
+$MESS ['PW_TD_EDIT_TITLE'] = "Редактирование лота";
+$MESS ['PW_TD_CONFIRM_DEL_LOT'] = "Вы уверены что хотите удалить лот со всеми привязками?";
+$MESS ['PW_TD_DELETE'] = "удалить";
+$MESS ['PW_TD_ACTIVATE'] = "активировать";
+$MESS ['PW_TD_DEACTIVATE'] = "деактивировать";
+$MESS ['PW_TD_CREATE'] = "Создать новый лот";
+$MESS ['PW_TD_ADD_TITLE'] = "Нажмите для добавления нового лота";
+$MESS ['PW_TD_PAGE_TITLE'] = "Лоты";
+$MESS ['PW_TD_YES'] = "да";
+$MESS ['PW_TD_NO'] = "нет";
+$MESS ['PW_TD_ALL'] = "(все)";
+$MESS ['PW_TD_F_ACTIVE'] = "Активна:";
+$MESS ['PW_TD_F_TITLE'] = "Наименование:";
+$MESS ['PW_TD_F_SECTION'] = "Раздел:";
+$MESS ['PW_TD_EDIT_LOT_VIEW'] = "Просмотр лота";
+$MESS ['PW_TD_FL_ID'] = "ID";
+$MESS ['PW_TD_FL_ACTIVE'] = "Активна";
+$MESS ['PW_TD_FL_SECTION'] = "Раздел";
+$MESS ['PW_TD_DATE_START'] = "Дата начала";
+$MESS ['PW_TD_DATE_END'] = "Дата окончания";
+$MESS ['PW_TD_NUM_LOT'] = "Номер лота";
+$MESS ['PW_TD_ERROR_ATTACH'] = "Ошибка добавления файла";
+$MESS ['PW_TD_PROPOSAL'] = "Предложения";
+$MESS ['PW_TD_VIEW_PROPOSAL'] = "Просмотр предложений";
+?>

@@ -1,0 +1,109 @@
+.t_form_filter {
+    width: 100%;
+    float: left;
+    margin: -10px 0 0;
+}
+.t_form_filter label {
+    width: 100%;
+    float: left;
+    font-size: 14px;
+}
+.t_form_filter label select,.t_form_filter label input[type=text] {
+    width: 100%;
+    float: left;
+    margin: 3px 0 7px;
+}
+.t_form_filter label.checkbox {
+    font-size: 12px;
+}
+.t_form_filter label.checkbox input {
+    margin-left: 0;
+}
+.t_form_filter .t_center {
+    margin: 15px 0 0;
+    float: left;
+    width: 100%;
+}
+
+.t_lots {
+    float: left;
+    margin: 5px 0 15px;
+}
+.t_lots table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.t_lots tr {}
+.t_lots td:first-child {            
+    border-top: 1px solid #d9d9d9;
+}
+.t_lots tr.odd {
+    background-color: #f2f2f2;
+}
+.t_lots tr td {
+    padding: 20px 10px 5px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #d9d9d9;
+}
+.t_lots .t_lot_title {
+    font-size: 14px;
+    font-weight: bold;
+    float: left;
+    width: 100%;
+    margin: 0 0 10px;
+}
+.t_lots .t_lot_descr {
+    float: left;
+    width: 535px;
+    font-size: 12px;
+}
+.t_lots .t_lot_descr span {
+    float: left;
+    margin: 0 0 5px;
+    width: 100%;
+}
+.t_lots .t_lot_meta {
+    float: right;
+    width: 135px;
+    font-size: 12px;
+}
+.t_lots .t_lot_meta span {
+    float: left;
+    margin: 0 0 5px;
+    width: 100%;
+}
+
+.t_active {
+    padding: 0 0 0 20px;
+    line-height: 12px;
+    min-height: 15px;
+    display: inline-block;
+    background: transparent url(images/active.gif) 0 0 no-repeat scroll;
+}
+.t_legend.t_active {
+    padding-right: 20px;
+}
+.t_arhive{
+    padding: 0 0 0 20px;
+    line-height: 12px;
+    min-height: 15px;
+    display: inline-block;
+    background: transparent url(images/arhive.gif) 0 0 no-repeat scroll;
+}
+a.t_arhive{
+    color: #f1896c !important;
+}
+
+.t_block_left {
+    float: left;
+    width: 205px;
+}
+.t_block_right {
+    float: right;
+    width: 695px;
+}
+.t_block_sort {
+    padding: 20px 0px 5px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #d9d9d9;
+}

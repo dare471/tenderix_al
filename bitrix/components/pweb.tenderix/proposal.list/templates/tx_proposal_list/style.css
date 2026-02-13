@@ -1,0 +1,93 @@
+.t_lot_table {
+    border-collapse: collapse;
+    font-size: 12px;
+    font-family: Verdana;
+	margin: 0;
+}
+
+.t_proposal_table {
+	border-collapse: collapse;
+    font-size: 12px;
+    font-family: Verdana;
+	margin: 0;
+}
+
+.t_proposal_table th {
+	border: 1px solid #7b9aa9;
+	padding: 3px 10px;
+	white-space: nowrap;
+	background: #eeeff0;
+}
+.t_proposal_table td {
+	border: 1px solid #7b9aa9;
+	padding: 3px 10px;
+}
+
+.t_lot_table.bold * {
+	font-weight: bold;
+}
+.t_lot_table th {
+	border: 0px solid #7b9aa9;
+	padding: 3px 10px;
+	white-space: nowrap;
+}
+.t_lot_table td {
+	border: 0px solid #7b9aa9;
+	padding: 3px 10px;
+}
+.t_lot_table tr {
+	border-top: 1px solid #fff;
+}
+        .t_lot_table tr.odd {
+            background: #f2f2f2;
+        }
+    .t_lot_table input {
+        border: 1px solid #abadb3;
+        width: 95px;
+        padding: 1px 5px;
+        background-image: linear-gradient(bottom, rgb(243,242,242) 9%, rgb(255,255,255) 78%);
+        background-image: -o-linear-gradient(bottom, rgb(243,242,242) 9%, rgb(255,255,255) 78%);
+        background-image: -moz-linear-gradient(bottom, rgb(243,242,242) 9%, rgb(255,255,255) 78%);
+        background-image: -webkit-linear-gradient(bottom, rgb(243,242,242) 9%, rgb(255,255,255) 78%);
+        background-image: -ms-linear-gradient(bottom, rgb(243,242,242) 9%, rgb(255,255,255) 78%);
+
+        background-image: -webkit-gradient(
+                linear,
+                left bottom,
+                left top,
+                color-stop(0.09, rgb(243,242,242)),
+                color-stop(0.78, rgb(255,255,255))
+        );
+    }
+.t_prov {
+    float: left;
+    width: 100%;
+}
+.btn-add-submit,
+.btn-fail {
+	background: #7D8287;
+	color: #fff;
+	
+}
+.btn-add-submit:hover,
+.btn-fail:hover {
+	background: #6F7377;
+	color: #fff;
+}
+.btn-fail:hover,
+.btn-add-submit:hover,
+.btn-fail:active,
+.btn-add-submit:active,
+.btn-fail:focus,
+.btn-add-submit:focus
+{
+	box-shadow: none;
+	outline: none;
+}
+
+.btn-fail {
+	background: #ce2c29;
+}
+.btn-fail:hover {
+	background: #B22323;
+}

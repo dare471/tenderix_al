@@ -1,0 +1,87 @@
+
+.form-date {
+    position: relative;
+}
+.form-date img.calendar-icon {
+    border:0px;
+    width:19px;
+    height:19px;
+    vertical-align:top;
+    margin:1px;
+    margin-left:2px;
+    cursor: pointer;
+    position: absolute;
+    top: 7px;
+    right: 24px;
+}
+.form-date img.calendar-icon-hover {
+    border:1px solid #AEB6C2; 
+    background-color:#DBE3F2; 
+    margin:0px; 
+    margin-left:1px}
+    
+.bx-calendar .bx-calendar-button-block {
+   -webkit-box-sizing: inherit!important;
+   -moz-box-sizing: inherit!important;
+   box-sizing: inherit!important;
+}
+.buttom_filter {
+	text-align: left;
+}
+a.btn_filter {
+	text-decoration: none!important;
+	cursor: pointer;
+	border-bottom: 1px solid;
+}
+.form_filter {
+	position: fixed !important;
+	background: #fff;
+	right: -400px;
+	top: 102px;
+	bottom: 0;
+	z-index: 60;
+	width: 400px;
+	padding: 20px 30px 30px 30px;
+	border-left: 5px solid #CF1427;
+	#box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+}
+
+.btn_close {
+	font-size: 24px;
+	cursor: pointer;
+}
+
+.btn-submit {
+	background: #CF1427;
+	color: #fff;
+}
+
+.btn-reset:hover {
+	border: 1px solid #000;
+}
+
+.btn-submit:hover {
+	background: #BC1226;
+	color: #fff;
+}
+
+.form_filter input, 
+.form_filter input:active, 
+.form_filter input:focus, 
+.form_filter input:active:focus,
+.form_filter select, 
+.form_filter select:active, 
+.form_filter select:focus, 
+.form_filter select:active:focus
+{
+	outline:none !important;
+	box-shadow: none !important;
+}
+
+.form_filter input,
+.form_filter select,
+.form_filter label {
+	font-size: 14px !important;
+}
+
+

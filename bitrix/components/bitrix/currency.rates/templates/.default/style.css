@@ -1,0 +1,46 @@
+.currency-list-wrapper {
+	#height: 32px;
+	#overflow: hidden;
+}
+.currency-list {
+	margin: 0;
+	padding: 3px 0;
+	display: inline-block;
+}
+.currency-list li {
+	display: inline-block;
+	margin-right: 12px;
+}
+.cur_icon {
+	height: 18px;
+	width: 28px;
+	display: inline-block;
+	background-size: contain;
+	margin: 0 auto;
+	margin-bottom: 4px;
+	margin-right: 4px;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+}
+.cur_icon_RUB {
+	background-image: url('img/ru.jpg');
+}
+.cur_icon_EUR {
+	background-image: url('img/eu.jpg');
+}
+.cur_icon_USD {
+	background-image: url('img/us.jpg');
+}
+.cur_icon_UAH {
+	background-image: url('img/ua.jpg');
+}
+.cur_val_wrapper,
+.info_wrapper {
+	font-size: 0.8rem;
+	font-weight: bold;
+}
+.cur_val {
+	color: #ce2c29;
+}
+
+
