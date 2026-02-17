@@ -4,6 +4,7 @@
 	background-size: contain;
 	width: 200px;
 	height: 50px;
+	min-height: 44px;
 }
 .logo-red {
 	background: url('images/logo-red.png') no-repeat;
@@ -11,80 +12,112 @@
 	background-size: contain;
 	width: 200px;
 	height: 50px;
+	min-height: 44px;
 }
 
 .nav-link {
 	color: #fff;
-	padding-left: 1rem !important;
-	padding-right: 1rem !important;
+	padding: 0.75rem 1rem !important;
+	min-height: 44px;
+	display: inline-flex;
+	align-items: center;
+	transition: color 0.2s ease;
+}
+.nav-link:hover {
+	color: rgba(255, 255, 255, 0.85);
+}
+.nav-link:focus {
+	outline: none;
+}
+.nav-link:focus-visible {
+	outline: 2px solid #fff;
+	outline-offset: 2px;
 }
 
 .nav-user {
 	padding-top: 12px;
+	padding-bottom: 12px;
 	width: 100%;
 }
 
 .nav-user .nav-link {
-	color: #000;
+	color: #1a1a1a;
 }
-
 .nav-user .nav-link:hover {
 	color: #575757;
 }
-
-.nav-link:hover {
-	color: #ccc;
-}
-.nav-brand:focus,
-.nav-link:focus {
-	outline: none;
+.nav-user .nav-link:focus-visible {
+	outline-color: #CF1427;
 }
 
 .nav-item.active .nav-link {
-	color: #ccc;
+	color: rgba(255, 255, 255, 0.9);
 }
 
 .nav-user .nav-item.active .nav-link {
-	color: #000;
+	color: #1a1a1a;
 	border-bottom: 3px solid #6C7DB7;
 }
 
 .btn-login {
 	border: 1px solid #fff;
 	color: #fff;
+	min-height: 44px;
+	padding: 0.5rem 1.25rem;
+	border-radius: 4px;
+	transition: background-color 0.2s ease, color 0.2s ease;
 }
-
 .btn-login:hover {
 	background: #fff;
 	color: #000;
 }
+.btn-login:focus-visible {
+	outline: 2px solid #fff;
+	outline-offset: 2px;
+}
 
 .btn-logout {
 	color: #000;
+	min-height: 44px;
+	padding: 0.5rem 1.25rem;
+	border-radius: 4px;
+	transition: color 0.2s ease, background-color 0.2s ease;
 }
-
 .btn-logout:hover {
 	color: #575757;
+	background: rgba(0, 0, 0, 0.05);
 }
 .btn-logout:active,
 .btn-logout:focus {
 	box-shadow: none;
-
-} 
+	outline: none;
+}
+.btn-logout:focus-visible {
+	outline: 2px solid #CF1427;
+	outline-offset: 2px;
+}
 
 .user-info-avatar {
-    display: inline-block;
-    width: 48px;
-    height: 48px;
-    line-height: 48px;
-    border-radius: 24px;
-    text-align: center;
-    color: white;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 48px;
+	height: 48px;
+	min-width: 44px;
+	min-height: 44px;
+	border-radius: 50%;
+	text-align: center;
+	color: #fff;
 	background: coral;
-	font-size: 24px;
+	font-size: 1.25rem;
+	font-weight: 600;
+}
+.user-avatar {
+	border-radius: 50%;
+	object-fit: cover;
 }
 .user-info-name {
-    display: inline-block;
+	display: inline-block;
 }
 .line {
 	border-top: 2px solid #e2e2e2;
@@ -97,14 +130,13 @@
 	width: 24px;
 	height: 24px;
 }
-
 .info_text {
 	display: inline-block;
 }
 .info_phone {
 	font-weight: 600 !important;
 }
-.info_text>i {
+.info_text > i {
 	color: #ce2c29;
 }
 

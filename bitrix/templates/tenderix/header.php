@@ -5,34 +5,24 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="theme-color" content="#000000">
 		<link rel="icon" href="/favicon.ico">
 		<title><?$APPLICATION->ShowTitle()?></title>
-		
-		<!-- Js -->
-		<script src="<?=SITE_TEMPLATE_PATH?>/js/jquery.min.js"></script>
-		
-		<script src="<?=SITE_TEMPLATE_PATH?>/js/bootstrap.bundle.min.js"></script>
-		<script src="<?=SITE_TEMPLATE_PATH?>/js/popper.min.js"></script>
-		<script src="<?=SITE_TEMPLATE_PATH?>/js/bootstrap.min.js"></script>
-		
-		<script src="<?=SITE_TEMPLATE_PATH?>/js/jquery.easing.min.js"></script>
-		<script src="<?=SITE_TEMPLATE_PATH?>/js/scroll.js"></script>
-		<script src="<?=SITE_TEMPLATE_PATH?>/js/user-interface.js"></script>
-		
-		<!-- Css -->
+		<!-- CSS first for correct render order -->
 		<link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/css/bootstrap-reboot.min.css">
 		<link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/css/bootstrap.min.css">
 		<link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/css/bootstrap-grid.min.css">
 		<link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/css/user-interface.css">
-		
-		<!-- Fonts -->
 		<link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/css/fontawesome.min.css">
 		<link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/css/regular.min.css">
-		<link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/css/solid.min.css">	
-
+		<link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/css/solid.min.css">
 		<?$APPLICATION->ShowHead()?>
+		<script src="<?=SITE_TEMPLATE_PATH?>/js/bootstrap.bundle.min.js"></script>
+		<script src="<?=SITE_TEMPLATE_PATH?>/js/jquery.easing.min.js"></script>
+		<script src="<?=SITE_TEMPLATE_PATH?>/js/scroll.js"></script>
+		<script src="<?=SITE_TEMPLATE_PATH?>/js/user-interface.js"></script>
 	</head>
-	<body class="">
+	<body id="top" class="">
 		<?if ($USER->IsAdmin()):?>
 			<div>
 				<?$APPLICATION->ShowPanel();?>

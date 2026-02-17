@@ -1,20 +1,20 @@
 $(document).ready(function() {
-	
-	$(window).scroll(function(){
+	var $backToTop = $('.back-to-top');
+	var showAfter = 300;
 
-		// Show button after 100px
-		var showAfter = 100;
-		if ( $(this).scrollTop() > showAfter ) { 
-			$('.back-to-top').fadeIn();
-		} else { 
-			$('.back-to-top').fadeOut();
+	function toggleBackToTop() {
+		if ($(window).scrollTop() > showAfter) {
+			$backToTop.addClass('is-visible');
+		} else {
+			$backToTop.removeClass('is-visible');
 		}
-	});
+	}
 
-	//Click event to scroll to top
-	$('.back-to-top').click(function(){
-		$('html, body').animate({scrollTop : 0},800);
-			return false;
+	$(window).on('scroll', toggleBackToTop);
+	toggleBackToTop();
+
+	$backToTop.on('click', function(e) {
+		e.preventDefault();
+		$('html, body').animate({ scrollTop: 0 }, 400);
 	});
-	
 });

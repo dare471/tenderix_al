@@ -40,6 +40,11 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
             <b><?= GetMessage("PW_TD_RESPONSIBLE_PHONE") ?>:</b><br />
             <?= $arResult["LOT"]["RESPONSIBLE_PHONE"] ?>
         </p>
+        <p>
+            <b>Контакты для технических вопросов:</b><br />
+            <small style="color: #666;">При возникновении технических неполадок, проблем с получением уведомлений или других технических вопросов обращайтесь к:</small><br />
+            <strong>Сарсенбаев Диас</strong>
+        </p>
         <? if (count($arResult["LOT"]["FILE"]) > 0): ?>
             <p>
                 <b><?= GetMessage("PW_TD_DOCUMENT") ?>:</b><br />

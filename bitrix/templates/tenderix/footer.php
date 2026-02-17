@@ -1,8 +1,8 @@
-<? if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die(); ?>		
-		 <a href="#top" class="back-to-top"><i class="fas fa-caret-square-up"></i></a> 
+<? if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die(); ?>
+		<a href="#top" class="back-to-top" aria-label="Вернуться к началу страницы"><i class="fas fa-chevron-up" aria-hidden="true"></i></a>
 	</div>
 		<? if ($USER->IsAuthorized()):?>
-			<footer class="footer">
+			<footer class="footer" role="contentinfo">
 				<div class="container-fluid">
 					<div class="container">
 						<div class="row">
@@ -10,7 +10,7 @@
 								<div class="footer-content">
 									<div class="row">
 										<div class="col">
-											<span class="footer-author">© 2016-2023 ТОО "Лев Интеграция"</span>
+											<span class="footer-author">© 2016–<?=date('Y')?> ТОО «Лев Интеграция»</span>
 										</div>
 									</div>
 								</div>

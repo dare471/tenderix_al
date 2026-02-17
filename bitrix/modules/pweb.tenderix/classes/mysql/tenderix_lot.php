@@ -427,8 +427,24 @@ class CTenderixLot extends CAllTenderLot {
 		if ($arLot["END_LOT"] == "Y" || count($arLot['WIN']) > 0 || $arLot["FAIL"] == "Y")
 			return false;
 		
-		$time_end = strtotime($arLot["DATE_END"]) + $sec;
-		$time_end = date("d.m.Y H:i:s", $time_end);
+		// Получаем текущее время в часовом поясе Астаны (UTC+6)
+		$astanaTimeZone = new DateTimeZone('Asia/Almaty');
+		$currentDateTime = new DateTime('now', $astanaTimeZone);
+		$currentHour = (int)$currentDateTime->format('H');
+		
+		// Если продление происходит после 19:00 по времени Астаны
+		if ($currentHour >= 19) {
+			// Устанавливаем время окончания на следующий день в 14:00 по времени Астаны
+			$nextDay = clone $currentDateTime;
+			$nextDay->modify('+1 day');
+			$nextDay->setTime(14, 0, 0);
+			$time_end = $nextDay->format("d.m.Y H:i:s");
+		} else {
+			// Обычное продление на указанное количество секунд
+			$time_end = strtotime($arLot["DATE_END"]) + $sec;
+			$time_end = date("d.m.Y H:i:s", $time_end);
+		}
+		
 		// $ID = 0;
 		$ID = CTenderixLot::Update($arLot['ID'], array('DATE_END' => $time_end), true);
 		if ($ID > 0) {

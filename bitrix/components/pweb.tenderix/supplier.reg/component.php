@@ -138,6 +138,7 @@ if (isset($_REQUEST["reg_submit"])) {
 		
     } else {
         $arFields["STATUS"] = $arParams["STATUS"];
+        $isNewRegistration = true; // Флаг новой регистрации
         $ID = CTenderixUserSupplier::Add($arFields, $ID, $arParams["REG_FIELDS_REQUIRED"]);
     }
 
@@ -164,6 +165,39 @@ if (isset($_REQUEST["reg_submit"])) {
                 $res_file = CTenderixUserSupplier::SaveFile($ID, $file);
                 if (!$res_file)
                     break;
+            }
+        }
+        
+        // Отправка email-уведомления при успешной регистрации
+        if (isset($isNewRegistration) && $isNewRegistration && !$GLOBALS["APPLICATION"]->GetException()) {
+            // Получаем данные зарегистрированного пользователя
+            $rsUserSupplier = CTenderixUserSupplier::GetByID($ID);
+            if ($arUserSupplier = $rsUserSupplier->Fetch()) {
+                $rsUser = CUser::GetByID($ID);
+                $arUser = $rsUser->Fetch();
+                
+                // Формируем данные для письма
+                $arEventFields = array(
+                    "EMAIL_TO" => !empty($arFields["EMAIL"]) ? $arFields["EMAIL"] : $arUser["EMAIL"],
+                    "EMAIL_FROM" => COption::GetOptionString("main", "email_from", "noreply@tenderix.kz"),
+                    "LOGIN" => $arUser["LOGIN"],
+                    "NAME" => !empty($arFields["NAME"]) ? $arFields["NAME"] : $arUser["NAME"],
+                    "LAST_NAME" => !empty($arFields["LAST_NAME"]) ? $arFields["LAST_NAME"] : $arUser["LAST_NAME"],
+                    "SECOND_NAME" => !empty($arFields["SECOND_NAME"]) ? $arFields["SECOND_NAME"] : $arUser["SECOND_NAME"],
+                    "NAME_COMPANY" => !empty($arFields["NAME_COMPANY"]) ? $arFields["NAME_COMPANY"] : "",
+                    "FIO" => trim(($arFields["LAST_NAME"] ?? $arUser["LAST_NAME"]) . " " . ($arFields["NAME"] ?? $arUser["NAME"]) . " " . ($arFields["SECOND_NAME"] ?? $arUser["SECOND_NAME"])),
+                    "SITE_NAME" => $APPLICATION->GetTitle(),
+                    "SITE_URL" => (CMain::IsHTTPS() ? "https://" : "http://") . $_SERVER["HTTP_HOST"],
+                );
+                
+                // Получаем сайт для отправки
+                $arrSITE = CTenderixLot::GetSite();
+                if (empty($arrSITE)) {
+                    $arrSITE = array(SITE_ID);
+                }
+                
+                // Отправляем уведомление о регистрации
+                CEvent::Send("TENDERIX_SUPPLIER_REGISTERED", $arrSITE, $arEventFields, "N");
             }
         }
     }
