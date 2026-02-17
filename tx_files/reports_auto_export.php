@@ -41,7 +41,12 @@ function GeneratePeriodReport($periodType, $year, $periodNumber) {
         "<=DATE_END" => $dateEnd
     );
     
-    $rsLots = CTenderixLot::GetList(array("DATE_END" => "DESC"), $arFilter);
+    // CTenderixLot::GetList ожидает первые два параметра по ссылке ($by, $order),
+    // поэтому нельзя передавать массивы напрямую (иначе PHP выдаёт ошибку
+    // "Cannot pass parameter 1 by reference").
+    $by = "DATE_END";
+    $order = "DESC";
+    $rsLots = CTenderixLot::GetList($by, $order, $arFilter);
     $arLots = array();
     while ($arLot = $rsLots->Fetch()) {
         $time_end = strtotime($arLot["DATE_END"]) + intval($arLot["TIME_EXTENSION"]);
