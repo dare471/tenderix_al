@@ -155,7 +155,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && !empty($_REQUEST["register_submit_bu
 		$arResult['VALUES']["LID"] = SITE_ID;
 
 		$arResult['VALUES']["USER_IP"] = $_SERVER["REMOTE_ADDR"];
-		$arResult['VALUES']["USER_HOST"] = @gethostbyaddr($_SERVER["REMOTE_ADDR"]);
+		$arResult['VALUES']["USER_HOST"] = $_SERVER["REMOTE_ADDR"]; // gethostbyaddr убран: может зависать
 		
 		if($arResult["VALUES"]["AUTO_TIME_ZONE"] <> "Y" && $arResult["VALUES"]["AUTO_TIME_ZONE"] <> "N")
 			$arResult["VALUES"]["AUTO_TIME_ZONE"] = "";
@@ -203,10 +203,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && !empty($_REQUEST["register_submit_bu
 			unset($arEventFields["PASSWORD"]);
 			unset($arEventFields["CONFIRM_PASSWORD"]);
 
-			$event = new CEvent;
-			$event->SendImmediate("NEW_USER", SITE_ID, $arEventFields);
+			// Отправка писем через очередь (агент), чтобы страница не зависала при таймауте/ошибке SMTP
+			CEvent::Send("NEW_USER", SITE_ID, $arEventFields, "N");
 			if($bConfirmReq)
-				$event->SendImmediate("NEW_USER_CONFIRM", SITE_ID, $arEventFields);
+				CEvent::Send("NEW_USER_CONFIRM", SITE_ID, $arEventFields, "N");
+			// Письмо пользователю: подтверждение регистрации
+			CUser::SendUserInfo($ID, SITE_ID, GetMessage("USER_REGISTER_OK"), false);
 		}
 		else
 		{

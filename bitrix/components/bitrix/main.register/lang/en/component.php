@@ -5,4 +5,5 @@ $MESS["REGISTER_DEFAULT_TITLE"] = "New user registration";
 $MESS["REGISTER_USER_WITH_EMAIL_EXIST"] = "A user with this e-mail address (#EMAIL#) already exists.";
 $MESS["main_register_sess_expired"] = "Your session has expired. Please try to register again.";
 $MESS["main_register_decode_err"] = "Password decryption error (#ERRCODE#).";
+$MESS["USER_REGISTER_OK"] = "You have successfully registered.";
 ?>

@@ -412,13 +412,6 @@ CUtil::InitJSCore(array('ajax', 'jquery', 'popup'));?>
 									<td><b><?= GetMessage("PW_TD_RESPONSIBLE_PHONE") ?>:</b></td>
 									<td><?= $arResult["LOT"]["RESPONSIBLE_PHONE"] ?></td>
 								</tr>
-								<tr>
-									<td colspan="2" style="padding-top: 15px;">
-										<strong>Контакты для технических вопросов:</strong><br/>
-										<small style="color: #666;">При возникновении технических неполадок, проблем с получением уведомлений или других технических вопросов обращайтесь к:</small><br/>
-										<strong>Сарсенбаев Диас</strong>
-									</td>
-								</tr>
 								<? if (count($arResult["LOT"]["FILE"]) > 0): ?>
 									<tr>
 										<td><b><?= GetMessage("PW_TD_DOCUMENT") ?>:</b></td>

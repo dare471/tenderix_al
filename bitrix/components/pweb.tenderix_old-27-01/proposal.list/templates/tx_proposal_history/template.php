@@ -48,48 +48,18 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
 			$bestpr = $min_pr[0]; //лучшая цена			
 			
 			$arHistoryResult = array();
-			$arHistoryFlat = array(); // Плоский массив для сортировки
-			
 			foreach($arResult["PROPOSAL"] as $id => $val) {
 				$res = CTenderixProposal::GetSpecHistory(array("PROPOSAL_ID" => $id));
 				
 				while($arHistory = $res->Fetch()) {
-					// Вычисляем сумму для этой записи истории
-					$historySum = 0;
-					if ($arResult["TYPE_ID"] != "S" && $arResult["TYPE_ID"] != "R") {
-						$price = floatval($arHistory["PRICE_NDS"]);
-						$count = floatval($arHistory["COUNT"]);
-						$historySum = $price * $count;
-					}
+					//echo '<pre>'; print_r($arHistory);
+					// $arResult["PROPOSAL"][$arHistory['PROPOSAL_ID']]["HISTORY"][$arHistory['DATE_START']][$arHistory['PROPERTY_BUYER_ID']] = $arHistory;
+					$arHistoryResult[$arHistory['DATE_START']][$arHistory['PROPOSAL_ID']][$arHistory['PROPERTY_BUYER_ID']] = $arHistory;
 					
-					// Сохраняем в плоский массив с ключами для сортировки
-					$arHistoryFlat[] = array(
-						'DATE_START' => $arHistory['DATE_START'],
-						'PROPOSAL_ID' => $arHistory['PROPOSAL_ID'],
-						'PROPERTY_BUYER_ID' => $arHistory['PROPERTY_BUYER_ID'],
-						'SUM' => $historySum,
-						'DATA' => $arHistory
-					);
 				}
+					
 			}
 			
-			// Сортировка по дате (убывание) и сумме (убывание)
-			usort($arHistoryFlat, function($a, $b) {
-				// Сначала по дате (убывание)
-				$dateCompare = strcmp($b['DATE_START'], $a['DATE_START']);
-				if ($dateCompare !== 0) {
-					return $dateCompare;
-				}
-				// Если даты равны, сортируем по сумме (убывание)
-				return $b['SUM'] <=> $a['SUM'];
-			});
-			
-			// Перестраиваем структуру после сортировки
-			foreach($arHistoryFlat as $historyItem) {
-				$arHistoryResult[$historyItem['DATE_START']][$historyItem['PROPOSAL_ID']][$historyItem['PROPERTY_BUYER_ID']] = $historyItem['DATA'];
-			}
-			
-			// Дополнительная сортировка по дате для структуры (на случай если нужна)
 			krsort($arHistoryResult);
 			
 			?>
